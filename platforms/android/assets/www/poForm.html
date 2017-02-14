@@ -1,0 +1,81 @@
+<div id="poPage" data-role="page">
+    <div id="header" data-role="header">
+        <div id="backBtn"><img src="img/backBtn.png"/></div>
+        <div class="headerTitle">Purchase Order <span id="welcomeName"></span></div>
+    </div>
+    <div class="poContent" data-role="content">
+        <ul id="custHistorySelect"></ul>
+        <form id="poForm">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">Nama Customer</div>
+                <div class="ui-block-b"><input type="text" name="custName" id="custName" autocomplete="off"/></div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">Alamat Customer</div>
+                <div class="ui-block-b"><textarea name="custAddress" id="custAddress"></textarea></div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">Telp Customer</div>
+                <div class="ui-block-b"><input type="tel" name="custTel" id="custTel" /></div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b"><input type="tel" name="custTel_2" id="custTel_2" /></div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b"><input type="tel" name="custTel_3" id="custTel_3" /></div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">Contact Person customer</div>
+                <div class="ui-block-b"><input type="text" name="contactPerson" id="contactPerson" /></div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">Nama FA/SW</div>
+                <div class="ui-block-b"><input type="text" name="faswName" id="faswName" /></div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">Comment</div>
+                <div class="ui-block-b"><textarea id="comment" name="comment" rows="4" cols="50"></textarea></div>
+            </div>
+            <div id="productListSection">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">Jenis Barang</div>
+                    <div id="prdNameSection_1" data-idx="1" class="ui-block-b">
+                        
+                    </div>
+                </div>
+                <div id="prdNameDetail_1" class="ui-grid-a hide">
+                    <div class="ui-block-a">Nama Barang</div>
+                    <div id="prdNameSelect_1" data-idx="1" class="ui-block-b">
+                        
+                    </div>
+                </div>
+                <div id="prdQty_1" class="ui-grid-a hide">
+                    <div class="ui-block-a">Kuantitas Barang</div>
+                    <div id="prdQtyDetail_1" data-idx="1" class="ui-block-b">
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a" style="padding: 0px">
+                                <input type="text" placeholder="xxx" id="unitVal_1" value="">
+                            </div>
+                            <div class="ui-block-b" style="padding: 10px">
+                                <span class="unitProduct_1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <div id="addPrd">
+                        <i class="addIco fa fa-plus-circle fa-2x"></i>
+                        <span class="addText">Add More prd</span>
+                        <span class="clearfix"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="submitPo" class="bigBtn">submit</div>
+        </form>
+    </div>
+</div>

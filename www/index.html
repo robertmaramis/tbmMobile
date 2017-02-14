@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" type="text/css" href="js/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome-4.3-2.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/loading.css">
+        <title>Tiara Buana Mandiri</title>
+    </head>
+    <body>
+		<span id="fastclick">
+			<div id="mainModal" class="modal fade" role="dialog"></div>
+			<div id="loadingModal" class="modal fade" role="dialog">
+				<div class="cssload-jumping">
+					<span></span><span></span><span></span><span></span><span></span>
+				</div>
+			</div>
+			<div id="loginPage" data-role="page">
+				<div class="loginForm">
+					<div id="logo"><img src="img/LogoTBMMobilesmall.png"/></div>
+				</div>
+				<div id="loginFormDiv">
+					<form id="loginForm">
+						<input type="text" id="userName" name="name" class="fullWinput" placeholder="Username"/>
+						<input type="password" id="password" class="fullWinput" placeholder="Password" value=""/>
+						
+						<div id="login" class="bigBtn">Login</div>
+						<div id="forgotPw" class="bigBtn-o">Forgot Password</div>
+					</form>
+				</div>
+			</div>
+			<script type="text/javascript" src="cordova.js"></script>
+			<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+			<script type="text/javascript" src="js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+			<script type="text/javascript" src="js/jquery.fittext.js"></script>
+			<script type="text/javascript" src="js/jquery.lettering.js"></script>
+			<script type="text/javascript" src="js/jquery.textillate.js"></script>
+			<script type="text/javascript" src="js/sha1.js"></script>
+			<script type="text/javascript" src="js/properties.js"></script>
+			<script type="text/javascript" src="js/index.js"></script>
+			<script type="text/javascript" src="js/fastClick.js"></script>
+			<script type="text/javascript">
+				window.onerror = function(msg, url, linenumber) {
+					alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+					return true;
+				}
+			</script>
+			<script type="text/javascript">
+				app.initialize();
+			</script>
+		</span>
+    </body>
+</html>
